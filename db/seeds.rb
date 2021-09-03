@@ -10,10 +10,10 @@ require "faker"
 catagories = ["food", "travel", "misc"]
 
 10.times do |i|
-  Item.create(
+  Game.create(
     name: Faker::Hacker.abbreviation,
     description: Faker::Hacker.say_something_smart,
     category: catagories.sample,
-    likes: i,
+    likes: g,
   )
 end
